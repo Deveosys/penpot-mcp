@@ -35,6 +35,7 @@ export default defineConfig({
     preview: {
         port: 4400,
         cors: true,
+        host: "0.0.0.0",
         allowedHosts: process.env.PENPOT_MCP_PLUGIN_SERVER_LISTEN_ADDRESS
             ? process.env.PENPOT_MCP_PLUGIN_SERVER_LISTEN_ADDRESS.split(",").map((h) => h.trim())
             : [],
